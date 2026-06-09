@@ -5,21 +5,21 @@
 class Carlos < Formula
   desc "Pure-Go TUI agent with skill induction and sub-agent supervision."
   homepage "https://github.com/georgebuilds/carlos"
-  version "0.7.8"
+  version "0.7.10"
   license "GPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.8/carlos_0.7.8_darwin_x86_64.tar.gz"
-      sha256 "e04938360db920789ea10c4a61390525e91473c847c03a679ba54ec2a8377614"
+      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.10/carlos_0.7.10_darwin_x86_64.tar.gz"
+      sha256 "bc631582f8992027b11578dd44f142d05cd44f8602265884b567610f72ab0508"
 
       define_method(:install) do
         bin.install "carlos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.8/carlos_0.7.8_darwin_arm64.tar.gz"
-      sha256 "294b220828c0d8fa8452834060e04be0f12582e3f543b29caf77a9786202b96f"
+      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.10/carlos_0.7.10_darwin_arm64.tar.gz"
+      sha256 "bf1a6334369f22cb8073ac76efd2ebb684ae072b003212362c8fcc89b95bfd33"
 
       define_method(:install) do
         bin.install "carlos"
@@ -29,15 +29,15 @@ class Carlos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.8/carlos_0.7.8_linux_x86_64.tar.gz"
-      sha256 "93e1e1a571087ad5e9c5c595e239d2b2836a2522001ed934725de90cc101b9a0"
+      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.10/carlos_0.7.10_linux_x86_64.tar.gz"
+      sha256 "4b827447c335e019c9870d0078cb69dd60372c75454db7ea8fa08192598a4034"
       define_method(:install) do
         bin.install "carlos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.8/carlos_0.7.8_linux_arm64.tar.gz"
-      sha256 "a08c5c6325b71eaa0e9d8d9a8b707c074ad9b26e66521d4614b4a3da9c0042db"
+      url "https://github.com/georgebuilds/carlos/releases/download/v0.7.10/carlos_0.7.10_linux_arm64.tar.gz"
+      sha256 "075f57c49ccf6e6357c8850086d38e78a371c9714d6abf590776da3922e4f841"
       define_method(:install) do
         bin.install "carlos"
       end
